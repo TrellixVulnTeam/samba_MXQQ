@@ -536,7 +536,7 @@ NTSTATUS make_auth3_context_for_ntlm(TALLOC_CTX *mem_ctx,
 	switch (lp_server_role()) {
 	case ROLE_ACTIVE_DIRECTORY_DC:
 		role = "'active directory domain controller'";
-		methods = "samba4";
+		methods = "samba4 winbind";
 		break;
 	case ROLE_DOMAIN_MEMBER:
 		role = "'domain member'";
